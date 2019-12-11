@@ -1,12 +1,7 @@
 package com.itzhongzi.videoedu.domain;
 
 
-import java.io.Serializable;
-
-/**
- * 集 实体类
- */
-public class Episode implements Serializable {
+public class Episode {
 
   private Integer id;
   private String title;
@@ -15,7 +10,7 @@ public class Episode implements Serializable {
   private String coverImg;
   private Integer videoId;
   private String summary;
-  private java.sql.Timestamp createTime;
+  private java.util.Date createTime;
   private Integer chapterId;
 
 
@@ -82,11 +77,11 @@ public class Episode implements Serializable {
   }
 
 
-  public java.sql.Timestamp getCreateTime() {
+  public java.util.Date getCreateTime() {
     return createTime;
   }
 
-  public void setCreateTime(java.sql.Timestamp createTime) {
+  public void setCreateTime(java.util.Date createTime) {
     this.createTime = createTime;
   }
 

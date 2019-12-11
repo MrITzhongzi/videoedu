@@ -1,11 +1,7 @@
 package com.itzhongzi.videoedu.domain;
 
 
-import java.io.Serializable;
-/*
-*  视频表
-* */
-public class Video implements Serializable {
+public class Video {
 
   private Integer id;
   private String title;
@@ -13,9 +9,9 @@ public class Video implements Serializable {
   private String coverImg;
   private Integer viewNum;
   private Integer price;
-  private java.sql.Timestamp createTime;
+  private java.util.Date createTime;
   private Integer online;
-  private double point;
+  private Double point;
 
 
   public Integer getId() {
@@ -72,11 +68,11 @@ public class Video implements Serializable {
   }
 
 
-  public java.sql.Timestamp getCreateTime() {
+  public java.util.Date getCreateTime() {
     return createTime;
   }
 
-  public void setCreateTime(java.sql.Timestamp createTime) {
+  public void setCreateTime(java.util.Date createTime) {
     this.createTime = createTime;
   }
 
@@ -90,7 +86,7 @@ public class Video implements Serializable {
   }
 
 
-  public double getPoint() {
+  public Double getPoint() {
     return point;
   }
 
