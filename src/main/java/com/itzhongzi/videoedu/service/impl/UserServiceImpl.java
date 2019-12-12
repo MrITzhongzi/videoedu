@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
 import java.util.Map;
+import java.util.Random;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -73,5 +74,27 @@ public class UserServiceImpl implements UserService {
         userMapper.save(user);
 
         return user;
+    }
+
+    @Override
+    public User SaveWeChatUserTest() {
+
+        Random random = new Random();
+        User user = new User();
+        user.setSex(random.nextInt(3));
+        user.setOpenid(((Long)Math.round(Math.random() * 1000)).toString());
+        user.setName("小明" + Math.round(Math.random() * 10));
+        user.setHeadImg("https://qiniu.sijitianjian.com/homeicon/20190801/e0eb0fdceeba42669bff5f3c97981d91fe8d5513b5da4b0fb978fece9e849180.png");
+        user.setPhone("17862806857");
+        user.setSign("signanme");
+        user.setCity("中国山东");
+        user.setCreateTime(new Date());
+        try {
+            userMapper.save(user);
+            return user;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

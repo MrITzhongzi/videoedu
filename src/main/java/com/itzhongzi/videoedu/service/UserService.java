@@ -8,4 +8,5 @@ import com.itzhongzi.videoedu.domain.User;
 public interface UserService {
 
     public User SaveWeChatUser(String code);
+    public User SaveWeChatUserTest();
 }

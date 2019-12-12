@@ -5,7 +5,9 @@ import com.itzhongzi.videoedu.domain.JsonData;
 import com.itzhongzi.videoedu.domain.User;
 import com.itzhongzi.videoedu.service.UserService;
 import com.itzhongzi.videoedu.utils.JwtUtils;
+import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -59,9 +61,29 @@ public class WeChatController {
             // state 当前用户的页面需要拼接 http:// 这样才不会站内跳转
             response.sendRedirect(state + "?token=" + token + "&head_img=" + user.getHeadImg() + "&name=" + URLEncoder.encode(user.getName(), "UTF-8"));
 
-
         }
     }
 
+    /**
+     * 测试 回调接口
+     * @param code
+     * @param state
+     * @param response
+     * @throws IOException
+     */
+    @GetMapping("user/callback_test")
+    public void wechatUserCallbackTest(@RequestParam(value = "code", required = true) String code,
+                                   String state, HttpServletResponse response) throws IOException {
 
+        User user = userService.SaveWeChatUserTest();
+        if(user != null) {
+            //生成jwt 验证码
+            String token = JwtUtils.geneJsonWebToken(user);
+            System.out.println("token:" + token);
+            // state 当前用户的页面需要拼接 http:// 这样才不会站内跳转
+            String url = state + "?token=" + token + "&head_img=" + user.getHeadImg() + "&name=" + URLEncoder.encode(user.getName(), "UTF-8");
+            response.sendRedirect(url);
+
+        }
+    }
 }
