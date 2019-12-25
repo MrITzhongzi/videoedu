@@ -15,7 +15,7 @@ public interface VideoOrderMapper {
      * @param videoOrder
      * @return
      */
-    @Insert("INSERT INTO `video_education`.`video_order`(`openid`, `out_trade_no`, `state`, " +
+    @Insert("INSERT INTO `video_edu`.`video_order`(`openid`, `out_trade_no`, `state`, " +
             "`create_time`, `notify_time`, `total_fee`, `nickname`, `head_img`, `video_id`, " +
             "`video_title`, `video_img`, `user_id`, `ip`, `del`) " +
             "VALUES (#{openid},#{outTradeNo},#{state},#{createTime},#{notifyTime},#{totalFee}," +

@@ -23,7 +23,7 @@ public interface UserMapper {
      * @param user
      * @return
      */
-    @Insert("INSERT INTO `video_education`.`user`(`openid`, `name`, `head_img`, `phone`, `sign`, `sex`, `city`, `create_time`) " +
+    @Insert("INSERT INTO `video_edu`.`user`(`openid`, `name`, `head_img`, `phone`, `sign`, `sex`, `city`, `create_time`) " +
             "VALUES (#{openid},#{name},#{headImg},#{phone},#{sign},#{sex},#{city},#{createTime});")
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     int save(User user);

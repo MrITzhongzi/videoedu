@@ -12,8 +12,7 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.StringWriter;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 微信支付工具类, xml 转 map， map转 xml，生成签名等
@@ -65,7 +64,7 @@ public class WXPayUtils {
         org.w3c.dom.Document document = WXPayXmlUtil.newDocument();
         org.w3c.dom.Element root = document.createElement("xml");
         document.appendChild(root);
-        for (String key: data.keySet()) {
+        for (String key : data.keySet()) {
             String value = data.get(key);
             if (value == null) {
                 value = "";
@@ -86,20 +85,52 @@ public class WXPayUtils {
         String output = writer.getBuffer().toString(); //.replaceAll("\n|\r", "");
         try {
             writer.close();
-        }
-        catch (Exception ex) {
+        } catch (Exception ex) {
         }
         return output;
     }
 
 
     /**
-     *  看到18分钟
+     * 看到18分钟
      * 生成微信支付sign
+     *
      * @return
      */
-    public static String createSign(){
+    public static String createSign(SortedMap<String, String> params, String key) {
 
-        return null;
+        StringBuffer sb = new StringBuffer();
+        Set<Map.Entry<String, String>> es = params.entrySet();
+        Iterator<Map.Entry<String, String>> it = es.iterator();
+        // 生成 stringA="appid=wxd930ea5d5a258f4f&body=test&device_info=1000&mch_id=10000100&nonce_str=ibuaiVcKdpRxkhJA";
+        while (it.hasNext()) {
+
+            Map.Entry<String, String> entry = it.next();
+            String k = entry.getKey();
+            String v = entry.getValue();
+            if (null != v && !"".equals(v) && !"sign".equals(k) && !"key".equals(k)) {
+                sb.append(k + "=" + v + "&");
+            }
+        }
+
+        sb.append("key=").append(key);
+        System.out.println(sb.toString());
+        System.out.println("---------------------");
+        String sign = CommonUtils.MD5(sb.toString());
+        return sign;
     }
-}
+
+    /**
+     * 校验签名是否正确
+     * @param params
+     * @param key
+     * @return
+     */
+    public static boolean isCorrectSign(SortedMap<String, String> params, String key) {
+        String sign = createSign(params, key);
+        String weixinPaySign = params.get("sign").toUpperCase();
+
+        return weixinPaySign.equals(sign);
+    }
+
+    }

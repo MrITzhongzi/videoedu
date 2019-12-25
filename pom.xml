@@ -39,7 +39,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
+			<version>5.1.48</version>
 		</dependency>
 		<!-- 引入第三方数据源 -->
 		<dependency>
