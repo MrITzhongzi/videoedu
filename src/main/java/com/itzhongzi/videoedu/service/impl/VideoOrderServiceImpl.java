@@ -1,5 +1,7 @@
 package com.itzhongzi.videoedu.service.impl;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.itzhongzi.videoedu.config.WeChatConfig;
 import com.itzhongzi.videoedu.domain.User;
 import com.itzhongzi.videoedu.domain.Video;
@@ -10,11 +12,13 @@ import com.itzhongzi.videoedu.mapper.VideoMapper;
 import com.itzhongzi.videoedu.mapper.VideoOrderMapper;
 import com.itzhongzi.videoedu.service.VideoOrderService;
 import com.itzhongzi.videoedu.utils.CommonUtils;
+import com.itzhongzi.videoedu.utils.HttpUtils;
 import com.itzhongzi.videoedu.utils.WXPayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -34,7 +38,7 @@ public class VideoOrderServiceImpl implements VideoOrderService {
     private WeChatConfig weChatConfig;
 
     @Override
-    public VideoOrder save(VideoOrderDto videoOrderDto) throws Exception {
+    public String save(VideoOrderDto videoOrderDto) throws Exception {
         //查找视频信息
          Video video = videoMapper.findById(videoOrderDto.getVideoId());
         //查找用户信息
@@ -59,16 +63,13 @@ public class VideoOrderServiceImpl implements VideoOrderService {
 
         videoOrderMapper.insert(videoOrder);
 
-        unifiedOrder(videoOrder);
+        //获取codeurl 真正的微信支付生成的codeurl ，需要 真实的商户号，密钥等, 暂时写死
+        // String nifiedOrde = unifiedOrder(videoOrder);
 
-        //获取codeurl
-
-
-        //生成二维码
+        String nifiedOrde = new GsonBuilder().create().toJson(videoOrder);
 
 
-
-        return null;
+        return nifiedOrde;
     }
 
 
@@ -99,8 +100,16 @@ public class VideoOrderServiceImpl implements VideoOrderService {
 
         System.out.println(payXml);
         //统一下单
-
-        return "";
+        String orderStr = HttpUtils.doPost(WeChatConfig.getUnifiedOrderUrl(), payXml, 4000);
+        if(null == orderStr) {
+            return null;
+        }
+        Map<String, String> unifiedOrderMap = WXPayUtils.xmlToMap(orderStr);
+        System.out.println(unifiedOrderMap.toString());
+        if(unifiedOrderMap != null) {
+            return unifiedOrderMap.get("code_url");
+        }
+        return null;
     }
 
 }

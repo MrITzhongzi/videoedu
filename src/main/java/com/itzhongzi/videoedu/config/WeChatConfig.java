@@ -159,4 +159,13 @@ public class WeChatConfig {
     public void setPayCallbackUrl(String payCallbackUrl) {
         this.payCallbackUrl = payCallbackUrl;
     }
+
+    /**
+     * 统一下单url
+     */
+    private static final String UNIFIED_ORDER_URL = "https://api.mch.weixin.qq.com/pay/unifiedorder";
+
+    public static String getUnifiedOrderUrl() {
+        return UNIFIED_ORDER_URL;
+    }
 }

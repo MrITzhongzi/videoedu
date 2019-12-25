@@ -13,6 +13,6 @@ public interface VideoOrderService {
      * @param videoOrderDto
      * @return
      */
-    VideoOrder save(VideoOrderDto videoOrderDto) throws Exception;
+    String save(VideoOrderDto videoOrderDto) throws Exception;
 
 }
