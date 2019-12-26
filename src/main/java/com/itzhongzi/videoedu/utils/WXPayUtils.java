@@ -122,6 +122,7 @@ public class WXPayUtils {
 
     /**
      * 校验签名是否正确
+     *
      * @param params
      * @param key
      * @return
@@ -133,4 +134,26 @@ public class WXPayUtils {
         return weixinPaySign.equals(sign);
     }
 
+    /**
+     * 获取有序的map
+     * @param map
+     * @return
+     */
+    public static SortedMap<String, String> getSortedmap(Map<String, String> map) {
+
+        SortedMap<String, String> sortedMap = new TreeMap<>();
+        Iterator<String> it = map.keySet().iterator();
+        while (it.hasNext()){
+            String key = it.next();
+            String value = map.get(key);
+            String temp = "";
+            if(null != value) {
+                temp = value.trim();
+            }
+
+            sortedMap.put(key, temp);
+        }
+        return sortedMap;
     }
+
+}

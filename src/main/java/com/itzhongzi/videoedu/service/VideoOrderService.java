@@ -15,4 +15,18 @@ public interface VideoOrderService {
      */
     String save(VideoOrderDto videoOrderDto) throws Exception;
 
+    /**
+     * 根据流水号查找订单
+     * @param outTradeNo
+     * @return
+     */
+    VideoOrder findByOutTradeNo(String outTradeNo);
+
+    /**
+     * 根据流水号 更新订单
+     * @param videoOrder
+     * @return
+     */
+    int updateVideoOrderByOutTradeNo(VideoOrder videoOrder);
+
 }

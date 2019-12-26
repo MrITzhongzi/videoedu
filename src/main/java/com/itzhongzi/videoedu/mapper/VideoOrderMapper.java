@@ -37,7 +37,7 @@ public interface VideoOrderMapper {
      * @return
      */
     @Select("select * from video_order where id = #{out_trade_no} and del=0")
-    VideoOrder findByOutTrade(@Param("out_trade_no") String outTradeNo);
+    VideoOrder findByOutTradeNo(@Param("out_trade_no") String outTradeNo);
 
 
     /**
