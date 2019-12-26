@@ -1,6 +1,7 @@
 package com.itzhongzi.videoedu.controller;
 
 import com.itzhongzi.videoedu.config.WeChatConfig;
+import com.itzhongzi.videoedu.exception.ItzhongziException;
 import com.itzhongzi.videoedu.mapper.VideoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,9 +34,9 @@ public class TestController {
     private VideoMapper videoMapper;
 
     @RequestMapping("test_db")
-    public Object testDb(){
-
-        return videoMapper.findAll();
+    public Object testDb() {
+        throw new ItzhongziException(-2, "自定义错误");
+//        return videoMapper.findAll();
     }
 }
 

@@ -14,6 +14,8 @@ import com.itzhongzi.videoedu.service.VideoOrderService;
 import com.itzhongzi.videoedu.utils.CommonUtils;
 import com.itzhongzi.videoedu.utils.HttpUtils;
 import com.itzhongzi.videoedu.utils.WXPayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -39,9 +41,16 @@ public class VideoOrderServiceImpl implements VideoOrderService {
     @Autowired
     private WeChatConfig weChatConfig;
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    private Logger dataLogger = LoggerFactory.getLogger("dataLogger");
+
+
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public String save(VideoOrderDto videoOrderDto) throws Exception {
+
+        dataLogger.info("mudule=video_order`api=save`user_id={}`video_id={}", videoOrderDto.getUserId(), videoOrderDto.getVideoId());
+
         //查找视频信息
         Video video = videoMapper.findById(videoOrderDto.getVideoId());
         //查找用户信息

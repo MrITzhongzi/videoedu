@@ -8,8 +8,11 @@ import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import com.itzhongzi.videoedu.domain.JsonData;
 import com.itzhongzi.videoedu.dto.VideoOrderDto;
+import com.itzhongzi.videoedu.exception.ItzhongziException;
 import com.itzhongzi.videoedu.service.VideoOrderService;
 import com.itzhongzi.videoedu.utils.IpUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -31,11 +34,16 @@ public class OrderController {
     @Autowired
     private VideoOrderService videoOrderService;
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    private Logger dataLogger = LoggerFactory.getLogger("dataLogger");
+
+
     @RequestMapping("add")
     public void saveOrder(@RequestParam(value = "video_id", required = true) int videoId,
                           HttpServletRequest request, HttpServletResponse response) throws Exception {
 //        String ip = IpUtils.getIpAddr(request);
 //        int userId = request.getAttribute("user_id");
+
         int userId = 1;  //临时写死
         String ip = "114.115.250.129";     // 临时写死后期修改
         VideoOrderDto videoOrderDto = new VideoOrderDto();
@@ -49,6 +57,7 @@ public class OrderController {
         if (codeUrl == null) {
             throw new NullPointerException();
         }
+
         try {
             //生成二维码
             Map<EncodeHintType, Object> hints = new HashMap<>();
