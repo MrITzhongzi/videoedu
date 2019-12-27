@@ -1,0 +1,207 @@
+2019-12-27 10:48:09.206 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarting:55 -Starting VideoeduApplication on localhost with PID 1004 (/Users/huanghainongye/Desktop/IdeaProjects/videoedu/target/classes started by huanghainongye in /Users/huanghainongye/Desktop/IdeaProjects/videoedu)
+2019-12-27 10:48:09.210 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
+2019-12-27 10:48:09.268 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-27 10:48:09.268 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-27 10:48:09.911 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 10:48:09.914 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 10:48:09.944 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2019-12-27 10:48:10.192 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 10:48:10.447 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2019-12-27 10:48:10.455 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:48:10.455 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-12-27 10:48:10.455 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:48:10.516 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-12-27 10:48:10.516 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1248 ms
+2019-12-27 10:48:10.919 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:48:11.349 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2019-12-27 10:48:11.371 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:48:11.398 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 10:48:11.401 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarted:61 -Started VideoeduApplication in 2.639 seconds (JVM running for 3.611)
+2019-12-27 10:48:20.658 INFO [http-nio-8080-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 10:48:20.659 INFO [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2019-12-27 10:48:20.664 INFO [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 5 ms
+2019-12-27 10:48:20.747 INFO [http-nio-8080-exec-2]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2019-12-27 10:53:35.808 INFO [Thread-10]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:53:35.811 INFO [Thread-10]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-1} closed
+2019-12-27 10:53:35.958 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarting:55 -Starting VideoeduApplication on localhost with PID 1004 (/Users/huanghainongye/Desktop/IdeaProjects/videoedu/target/classes started by huanghainongye in /Users/huanghainongye/Desktop/IdeaProjects/videoedu)
+2019-12-27 10:53:35.959 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
+2019-12-27 10:53:36.126 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 10:53:36.126 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 10:53:36.131 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2019-12-27 10:53:36.172 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 10:53:36.193 WARN [restartedMain]org.apache.tomcat.util.modeler.Registry.log:173 -The MBean registry cannot be disabled because it has already been initialised
+2019-12-27 10:53:36.204 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2019-12-27 10:53:36.205 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:53:36.206 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-12-27 10:53:36.206 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:53:36.216 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-12-27 10:53:36.216 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 255 ms
+2019-12-27 10:53:36.347 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:53:36.424 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2019-12-27 10:53:36.436 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:53:36.438 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 10:53:36.439 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarted:61 -Started VideoeduApplication in 0.506 seconds (JVM running for 328.592)
+2019-12-27 10:53:36.440 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2019-12-27 10:56:15.329 INFO [Thread-17]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:56:15.464 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarting:55 -Starting VideoeduApplication on localhost with PID 1004 (/Users/huanghainongye/Desktop/IdeaProjects/videoedu/target/classes started by huanghainongye in /Users/huanghainongye/Desktop/IdeaProjects/videoedu)
+2019-12-27 10:56:15.465 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
+2019-12-27 10:56:15.601 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 10:56:15.602 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 10:56:15.606 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2019-12-27 10:56:15.648 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 10:56:15.667 WARN [restartedMain]org.apache.tomcat.util.modeler.Registry.log:173 -The MBean registry cannot be disabled because it has already been initialised
+2019-12-27 10:56:15.677 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2019-12-27 10:56:15.678 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:56:15.678 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-12-27 10:56:15.678 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:56:15.683 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-12-27 10:56:15.684 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 217 ms
+2019-12-27 10:56:15.777 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:56:15.845 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2019-12-27 10:56:15.856 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:56:15.858 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 10:56:15.858 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarted:61 -Started VideoeduApplication in 0.416 seconds (JVM running for 488.018)
+2019-12-27 10:56:15.860 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2019-12-27 10:57:16.818 INFO [Thread-22]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:57:16.972 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarting:55 -Starting VideoeduApplication on localhost with PID 1004 (/Users/huanghainongye/Desktop/IdeaProjects/videoedu/target/classes started by huanghainongye in /Users/huanghainongye/Desktop/IdeaProjects/videoedu)
+2019-12-27 10:57:16.972 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
+2019-12-27 10:57:17.102 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 10:57:17.102 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 10:57:17.106 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2019-12-27 10:57:17.142 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 10:57:17.159 WARN [restartedMain]org.apache.tomcat.util.modeler.Registry.log:173 -The MBean registry cannot be disabled because it has already been initialised
+2019-12-27 10:57:17.168 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2019-12-27 10:57:17.169 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:57:17.169 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-12-27 10:57:17.169 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 10:57:17.174 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-12-27 10:57:17.175 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 200 ms
+2019-12-27 10:57:17.257 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 10:57:17.315 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2019-12-27 10:57:17.325 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 10:57:17.327 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 10:57:17.327 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarted:61 -Started VideoeduApplication in 0.377 seconds (JVM running for 549.489)
+2019-12-27 10:57:17.328 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2019-12-27 10:57:34.909 INFO [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 10:57:34.910 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2019-12-27 10:57:34.920 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 10 ms
+2019-12-27 10:57:34.926 INFO [http-nio-8080-exec-1]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-2} inited
+2019-12-27 11:10:00.101 INFO [Thread-27]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:10:00.101 INFO [Thread-27]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-2} closed
+2019-12-27 11:10:00.229 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarting:55 -Starting VideoeduApplication on localhost with PID 1004 (/Users/huanghainongye/Desktop/IdeaProjects/videoedu/target/classes started by huanghainongye in /Users/huanghainongye/Desktop/IdeaProjects/videoedu)
+2019-12-27 11:10:00.229 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
+2019-12-27 11:10:00.353 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 11:10:00.354 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 11:10:00.358 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2019-12-27 11:10:00.394 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 11:10:00.411 WARN [restartedMain]org.apache.tomcat.util.modeler.Registry.log:173 -The MBean registry cannot be disabled because it has already been initialised
+2019-12-27 11:10:00.421 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2019-12-27 11:10:00.421 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:10:00.422 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-12-27 11:10:00.422 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 11:10:00.427 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-12-27 11:10:00.427 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 196 ms
+2019-12-27 11:10:00.515 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:10:00.581 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2019-12-27 11:10:00.593 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:10:00.595 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 11:10:00.595 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarted:61 -Started VideoeduApplication in 0.386 seconds (JVM running for 1312.722)
+2019-12-27 11:10:00.596 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2019-12-27 11:10:06.885 INFO [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 11:10:06.887 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2019-12-27 11:10:06.891 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 4 ms
+2019-12-27 11:10:06.895 INFO [http-nio-8080-exec-1]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-3} inited
+2019-12-27 11:13:52.181 INFO [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:13:52.182 INFO [SpringContextShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-3} closed
+2019-12-27 11:13:53.688 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarting:55 -Starting VideoeduApplication on localhost with PID 1209 (/Users/huanghainongye/Desktop/IdeaProjects/videoedu/target/classes started by huanghainongye in /Users/huanghainongye/Desktop/IdeaProjects/videoedu)
+2019-12-27 11:13:53.690 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
+2019-12-27 11:13:53.753 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-27 11:13:53.753 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-27 11:13:54.298 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 11:13:54.299 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 11:13:54.327 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2019-12-27 11:13:54.572 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 11:13:54.822 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2019-12-27 11:13:54.828 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:13:54.829 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-12-27 11:13:54.829 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 11:13:54.881 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-12-27 11:13:54.881 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1128 ms
+2019-12-27 11:13:55.245 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:13:55.642 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2019-12-27 11:13:55.664 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:13:55.689 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 11:13:55.693 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarted:61 -Started VideoeduApplication in 2.314 seconds (JVM running for 2.916)
+2019-12-27 11:14:05.341 INFO [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 11:14:05.342 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2019-12-27 11:14:05.346 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 3 ms
+2019-12-27 11:16:17.540 INFO [Thread-10]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:16:17.745 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarting:55 -Starting VideoeduApplication on localhost with PID 1209 (/Users/huanghainongye/Desktop/IdeaProjects/videoedu/target/classes started by huanghainongye in /Users/huanghainongye/Desktop/IdeaProjects/videoedu)
+2019-12-27 11:16:17.745 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
+2019-12-27 11:16:18.004 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 11:16:18.004 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 11:16:18.011 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2019-12-27 11:16:18.094 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 11:16:18.131 WARN [restartedMain]org.apache.tomcat.util.modeler.Registry.log:173 -The MBean registry cannot be disabled because it has already been initialised
+2019-12-27 11:16:18.146 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2019-12-27 11:16:18.147 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:16:18.148 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-12-27 11:16:18.148 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 11:16:18.159 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-12-27 11:16:18.159 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 409 ms
+2019-12-27 11:16:18.342 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:16:18.464 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2019-12-27 11:16:18.484 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:16:18.488 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 11:16:18.489 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarted:61 -Started VideoeduApplication in 0.782 seconds (JVM running for 145.716)
+2019-12-27 11:16:18.491 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2019-12-27 11:18:50.630 INFO [Thread-17]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:18:50.766 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarting:55 -Starting VideoeduApplication on localhost with PID 1209 (/Users/huanghainongye/Desktop/IdeaProjects/videoedu/target/classes started by huanghainongye in /Users/huanghainongye/Desktop/IdeaProjects/videoedu)
+2019-12-27 11:18:50.766 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
+2019-12-27 11:18:50.901 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 11:18:50.901 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 11:18:50.906 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2019-12-27 11:18:50.945 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 11:18:50.963 WARN [restartedMain]org.apache.tomcat.util.modeler.Registry.log:173 -The MBean registry cannot be disabled because it has already been initialised
+2019-12-27 11:18:50.973 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2019-12-27 11:18:50.973 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:18:50.973 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-12-27 11:18:50.973 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 11:18:50.979 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-12-27 11:18:50.979 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 210 ms
+2019-12-27 11:18:51.067 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 11:18:51.131 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2019-12-27 11:18:51.142 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 11:18:51.143 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 11:18:51.144 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarted:61 -Started VideoeduApplication in 0.402 seconds (JVM running for 298.376)
+2019-12-27 11:18:51.145 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2019-12-27 11:18:57.088 INFO [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 11:18:57.089 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2019-12-27 11:18:57.096 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 7 ms
+2019-12-27 11:18:57.147 INFO [http-nio-8080-exec-1]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2019-12-27 11:19:29.689 INFO [http-nio-8080-exec-5]dataLogger.save:52 -mudule=video_order`api=save`user_id=1`video_id=6
+2019-12-27 11:20:25.393 INFO [http-nio-8080-exec-10]dataLogger.save:52 -mudule=video_order`api=save`user_id=1`video_id=6
+2019-12-27 11:22:31.256 INFO [http-nio-8080-exec-9]dataLogger.save:52 -mudule=video_order`api=save`user_id=1`video_id=1
+2019-12-27 11:22:35.835 INFO [http-nio-8080-exec-8]dataLogger.save:52 -mudule=video_order`api=save`user_id=1`video_id=7
+2019-12-27 13:02:46.167 INFO [Thread-22]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 13:02:46.178 INFO [Thread-22]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-1} closed
+2019-12-27 13:02:46.332 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarting:55 -Starting VideoeduApplication on localhost with PID 1209 (/Users/huanghainongye/Desktop/IdeaProjects/videoedu/target/classes started by huanghainongye in /Users/huanghainongye/Desktop/IdeaProjects/videoedu)
+2019-12-27 13:02:46.332 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
+2019-12-27 13:02:46.474 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:249 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 13:02:46.475 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-27 13:02:46.479 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2019-12-27 13:02:46.521 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 13:02:46.542 WARN [restartedMain]org.apache.tomcat.util.modeler.Registry.log:173 -The MBean registry cannot be disabled because it has already been initialised
+2019-12-27 13:02:46.552 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2019-12-27 13:02:46.553 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-27 13:02:46.553 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-12-27 13:02:46.553 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 13:02:46.560 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-12-27 13:02:46.560 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 226 ms
+2019-12-27 13:02:46.659 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 13:02:46.733 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2019-12-27 13:02:46.747 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2019-12-27 13:02:46.749 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 13:02:46.749 INFO [restartedMain]com.itzhongzi.videoedu.VideoeduApplication.logStarted:61 -Started VideoeduApplication in 0.444 seconds (JVM running for 6533.793)
+2019-12-27 13:02:46.750 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2019-12-27 15:26:04.118 INFO [SpringContextShutdownHook]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'

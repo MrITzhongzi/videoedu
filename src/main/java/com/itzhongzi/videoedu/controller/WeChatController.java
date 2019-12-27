@@ -6,6 +6,7 @@ import com.itzhongzi.videoedu.domain.User;
 import com.itzhongzi.videoedu.domain.VideoOrder;
 import com.itzhongzi.videoedu.service.UserService;
 import com.itzhongzi.videoedu.service.VideoOrderService;
+import com.itzhongzi.videoedu.utils.CommonUtils;
 import com.itzhongzi.videoedu.utils.JwtUtils;
 import com.itzhongzi.videoedu.utils.WXPayUtils;
 import org.apache.catalina.connector.Response;
@@ -22,6 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.SortedMap;
 
@@ -50,6 +52,30 @@ public class WeChatController {
         String callbackUrl = URLEncoder.encode(redirectUrl, "GBK");
         String qrcodeUrl = String.format(WeChatConfig.getOpenQrcodeUrl(), weChatConfig.getOpenAppid(), redirectUrl, accessPage);
         return JsonData.buildSuccess(qrcodeUrl);
+    }
+
+    /**
+     * 假数据测试地址
+     * @param accessPage
+     * @return
+     * @throws UnsupportedEncodingException
+     */
+    @GetMapping("login_url_test")
+    public JsonData loginUrlTest(@RequestParam(value = "access_page", required = true) String accessPage) throws UnsupportedEncodingException {
+        String name = "李洪伟";
+        String headImg = "http://img.hapem.cn/DDK_03.png";
+        User user = new User();
+        user.setName(name);
+        user.setHeadImg(headImg);
+        user.setId(1);
+        String token = JwtUtils.geneJsonWebToken(user);
+        String backUrl = accessPage;
+        HashMap<String, String> userMap = new HashMap<>();
+        userMap.put("name", name);
+        userMap.put("headImg", headImg);
+        userMap.put("token", token);
+        userMap.put("backUrl", backUrl);
+        return JsonData.buildSuccess(userMap);
     }
 
     /**

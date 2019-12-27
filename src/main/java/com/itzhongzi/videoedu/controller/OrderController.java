@@ -28,7 +28,7 @@ import java.util.Map;
  * 订单接口
  */
 @RestController
-@RequestMapping("/api/v1/order")
+@RequestMapping("/user/api/v1/order")
 public class OrderController {
 
     @Autowired
@@ -41,11 +41,11 @@ public class OrderController {
     @RequestMapping("add")
     public void saveOrder(@RequestParam(value = "video_id", required = true) int videoId,
                           HttpServletRequest request, HttpServletResponse response) throws Exception {
-//        String ip = IpUtils.getIpAddr(request);
-//        int userId = request.getAttribute("user_id");
+        String ip = IpUtils.getIpAddr(request);
+        int userId = (int)request.getAttribute("user_id");
 
-        int userId = 1;  //临时写死
-        String ip = "114.115.250.129";     // 临时写死后期修改
+//        int userId = 1;  //临时写死
+//        String ip = "114.115.250.129";     // 临时写死后期修改
         VideoOrderDto videoOrderDto = new VideoOrderDto();
         videoOrderDto.setUserId(userId);
         videoOrderDto.setVideoId(videoId);
